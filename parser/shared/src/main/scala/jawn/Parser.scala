@@ -137,7 +137,8 @@ abstract class Parser[J] {
         val txt = safeAt(i, i + offset)
         if (atEof(i + offset)) s"'$txt'" else s"'$txt...'"
       }
-    val s = "%s got %s (line %d, column %d)".format(msg, got, y, x)
+    // val s = "%s got %s (line %d, column %d)".format(msg, got, y, x)
+    val s = s"$msg got $got (line $y, column $x)"
     throw ParseException(s, i, y, x)
   }
 
