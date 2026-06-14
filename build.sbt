@@ -1,4 +1,13 @@
 ThisBuild / tlBaseVersion := "1.6"
+ThisBuild / version := "1.6.0-WASM-1"
+ThisBuild / isSnapshot := false
+ThisBuild / organization := "io.github.florian3k.jawn"
+ThisBuild / homepage := Some(url("https://github.com/Florian3k/wasm-jawn"))
+ThisBuild / scmInfo := Some(ScmInfo(
+  url("https://github.com/Florian3k/wasm-jawn"),
+  "scm:git:https://github.com/Florian3k/wasm-jawn.git"
+))
+
 lazy val scala212 = "2.12.21"
 lazy val scala213 = "2.13.18"
 lazy val scala3 = "3.3.7"
@@ -11,6 +20,12 @@ ThisBuild / developers += Developer(
   email = "erik@plastic-idolatry.com",
   id = "d_m",
   url = url("http://github.com/non/")
+)
+ThisBuild / developers += Developer(
+  id = "Florian3k",
+  name = "Florian3k",
+  email = "mfornal@virtuslab.com",
+  url = url("https://github.com/Florian3k")
 )
 ThisBuild / tlFatalWarnings := false
 
